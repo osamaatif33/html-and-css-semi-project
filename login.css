@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  #e6eefe;
+}
+.continer{
+    width: 450px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+  
+}
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+}
+form{
+    position: absolute;
+    left:25%;
+    top: 28%;
+    line-height: 5.5rem;
+    
+}
+.text{
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-bottom: black solid 2px;
+
+}
+.text:focus {
+    outline: none;
+}
+.text:focus ~ .user{
+    top: -5%;
+    animation-name: up-down;
+    animation-duration: 1s;
+
+}
+
+form .user{
+    position: absolute;
+    top:1%;
+    left: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+   
+}
+@keyframes up-down{
+    to{
+        transform: translateY(-20px);
+    }
+}
+
+
+.email{
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-bottom: black solid 2px;
+
+}
+.email:focus{
+    outline: none;
+}
+form .emal{
+    position: absolute;
+    top:26%;
+    left: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.email:focus ~ .emal{
+    top: 20%;
+    animation-name: up-down;
+    animation-duration: 1s;
+
+}
+.password{
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-bottom: black solid 2px;
+}
+.password:focus{
+    outline: none;
+}
+form .pass{
+    position: absolute;
+    top:50%;
+    left: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.password:focus ~ .pass{
+    top: 45%;
+    animation-name: up-down;
+    animation-duration: 1s;
+
+}
+.submit{
+    background-color: transparent;
+    height: 50px;
+    width: 120px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.reset{
+    background-color: transparent;
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-left: 5%;
+}
